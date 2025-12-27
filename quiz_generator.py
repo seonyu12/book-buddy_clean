@@ -66,7 +66,7 @@ def generate_quiz_batch(book_title):
 
 
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4.5-turbo",
             messages=[{"role": "user", "content": prompt}]
         )
         all_quizzes.append(response.choices[0].message.content)
